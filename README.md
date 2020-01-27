@@ -2,6 +2,8 @@
 
 Miniature Audio Amplifier with a DSP inside.
 
+eUPID: `M2AUv3-AMP4268`
+
 ## Specifications
 
 * Power input: DC 9-24V 6W, center positive barrel jack.
