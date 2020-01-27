@@ -1,0 +1,65 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "MiniAmp DSP"
+Date "2020-01-24"
+Rev "v3r1"
+Comp "SushiBits Innovation"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4000 3500 1000 1000
+U 5FCA1A58
+F0 "Power Delivery" 50
+F1 "Power.sch" 50
+F2 "PGOOD" O R 5000 3600 50 
+F3 "~RESET" O R 5000 3700 50 
+$EndSheet
+$Sheet
+S 7000 3500 1000 1000
+U 5FD3C5A3
+F0 "Amplified Output" 50
+F1 "Amplifiers.sch" 50
+F2 "INL" I L 7000 3600 50 
+F3 "INR" I L 7000 3700 50 
+F4 "PGOOD" I L 7000 4400 50 
+F5 "INC" I L 7000 3800 50 
+F6 "HPEN" O L 7000 4000 50 
+$EndSheet
+Text Label 5300 3600 2    50   ~ 0
+PGOOD
+Text Label 6700 4400 0    50   ~ 0
+PGOOD
+Wire Wire Line
+	6700 4400 7000 4400
+$Sheet
+S 5500 3500 1000 1000
+U 5FF9175F
+F0 "DSP" 50
+F1 "DSP.sch" 50
+F2 "~RESET" I L 5500 3700 50 
+F3 "OUTC" O R 6500 3800 50 
+F4 "OUTL" O R 6500 3600 50 
+F5 "OUTR" O R 6500 3700 50 
+F6 "HPEN" I R 6500 4000 50 
+F7 "PGOOD" I L 5500 3600 50 
+$EndSheet
+Wire Wire Line
+	5000 3700 5500 3700
+Wire Wire Line
+	6500 3600 7000 3600
+Wire Wire Line
+	7000 3700 6500 3700
+Wire Wire Line
+	6500 3800 7000 3800
+Wire Wire Line
+	6500 4000 7000 4000
+Wire Wire Line
+	5000 3600 5500 3600
+$EndSCHEMATC
